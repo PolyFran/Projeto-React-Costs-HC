@@ -1,20 +1,20 @@
 import ProjectForm from '../project/ProjectForm'
 import styles from './NewProject.module.css'
-import { useHistory, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function NewProject() {
 
     const navigate = useNavigate()
 
     function createPost(project) {
-        //inicialize vost and services
+        //inicialize cost and services
         project.cost = 0
         project.services = []
 
-        fetch("http://localhost:5000/projects", {
+        fetch('http://localhost:5000/projects', {
             method: 'POST',
             headers: {
-                'content-type': 'aplication/json',
+                'Content-Type': 'application/json',
             },
             //envia os dados do projeto na rota informada(http)
             body: JSON.stringify(project),
