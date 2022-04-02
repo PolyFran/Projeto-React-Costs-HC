@@ -17,7 +17,6 @@ function Projects() {
 
     const location = useLocation()
     let message = ''
-
     if(location.state) {
         message = location.state.message
     }
