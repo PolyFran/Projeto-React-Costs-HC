@@ -7,16 +7,23 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 100,
+      "services": [
+        {
+          "name": "Compras",
+          "cost": "100",
+          "description": "queijo",
+          "id": "8ca7a452-5c8a-4b40-a11f-c7bc3afb8e8c"
+        }
+      ],
       "id": 1
     },
     {
       "name": "Poliana",
-      "budget": "15000",
+      "budget": "10000",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
