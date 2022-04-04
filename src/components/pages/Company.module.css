@@ -11,6 +11,10 @@
     font-size: 3em;
     margin-bottom: .5em;
 }
+.company_container h2 {
+    width: 100%;
+    padding: .5em;
+}
 
 .company_container h1 span {
     color: #ffbb33;
