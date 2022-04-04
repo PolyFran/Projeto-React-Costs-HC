@@ -2,38 +2,45 @@
   "projects": [
     {
       "name": "Guilherme",
-      "budget": "10000",
+      "budget": "1000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 300,
+      "cost": 1000,
       "services": [
         {
-          "name": "Compras",
-          "cost": "100",
-          "description": "queijo",
-          "id": "8ca7a452-5c8a-4b40-a11f-c7bc3afb8e8c"
-        },
-        {
-          "name": "Farmácia",
-          "cost": "200",
-          "description": "Compras de remédios e vitaminas",
-          "id": "6452a238-689e-4097-8035-c92ac1d70b3e"
+          "name": "Energia Solar",
+          "cost": "1000",
+          "id": "34d20d18-3410-4c51-8490-9bfa839eaf0c",
+          "description": "Energia Solar"
         }
       ],
       "id": 1
     },
     {
-      "name": "Poliana",
-      "budget": "10000",
+      "name": "MotorHome",
+      "budget": "190000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "4",
+        "name": "Planejamento"
       },
-      "cost": 0,
-      "services": [],
-      "id": 2
+      "cost": 150000,
+      "services": [
+        {
+          "name": "Van",
+          "cost": "80000",
+          "description": "Compra da Van",
+          "id": "7bcf1370-6ef9-44aa-a7a3-252d809eca1b"
+        },
+        {
+          "name": "Interior",
+          "cost": "70000",
+          "description": "Modificação do Interior",
+          "id": "f58aa8e6-6a57-4e9c-83d7-630e2834713d"
+        }
+      ],
+      "id": 4
     }
   ],
   "categories": [
