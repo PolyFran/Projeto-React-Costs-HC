@@ -7,13 +7,19 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 100,
+      "cost": 300,
       "services": [
         {
           "name": "Compras",
           "cost": "100",
           "description": "queijo",
           "id": "8ca7a452-5c8a-4b40-a11f-c7bc3afb8e8c"
+        },
+        {
+          "name": "Farmácia",
+          "cost": "200",
+          "description": "Compras de remédios e vitaminas",
+          "id": "6452a238-689e-4097-8035-c92ac1d70b3e"
         }
       ],
       "id": 1

@@ -7,6 +7,7 @@ import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm'
 import { parse, v4 as uuidv4} from 'uuid'
+import ServiceCard from '../service/ServiceCard'
 
 function Project() {
 
@@ -31,7 +32,7 @@ function Project() {
               .then((resp) => resp.json())
               .then((data) => {
                 setProject(data)
-                //setServices(data.services)
+                setServices(data.services)
               }),
           300,
         )
@@ -93,12 +94,17 @@ function Project() {
         })
           .then((resp) => resp.json())
           .then((data) => {
+              setShowServiceForm(false)
             //setServices(data.services)
             //setShowServiceForm(!showServiceForm)
             //setMessage('Serviço adicionado!')
             //setType('success')
           })
           .catch((err) => console.log(err))
+      }
+
+      function removeService() {
+
       }
 
       function toggleProjectForm() {
@@ -151,7 +157,19 @@ function Project() {
                 </div>
                 <h2>Servicos</h2>
                 <Container customClass="start">
-                    <p>Itens de Serviços</p>
+                {services.length > 0 && services.map((service) => (
+                  <ServiceCard
+                        id={service.id}
+                        name={service.name}
+                        cost={service.cost}
+                        description={service.description}
+                        key={service.id}
+                        handleRemove={removeService}
+                  />
+                ))}
+                    {services.length === 0 && <p>Não há serviços cadastrados.</p>
+
+                    }
                 </Container>
             </Container>
         </div>
