@@ -9,9 +9,10 @@ function Company() {
     return (
         
         <div>
-            <h1>Sobre Nós</h1>
+           
         
             <div className={styles.company_container}>
+            <h1>Sobre Nós</h1>
 
             <p>A Pereira tecnologias é uma empresa de desenvolvimento de software e se distingue em cada um dos projetos executados. 
                 Sempre atentos às novas tecnologias, possuímos uma equipe altamente especializada, formada por profissionais em constante 
@@ -25,11 +26,10 @@ function Company() {
                 <h1> Principais Tecnologias</h1>
 
                 <div>
-
-                    <img src={react} alt="React" />
-                    <img src={js} alt="JavaScript" />
-                    <img src={html} alt="HTML" />
-                    <img src={css} alt="CSS" />
+                    <img className={styles.react} src={react} alt="React" />
+                    <img className={styles.js} src={js} alt="JavaScript" />
+                    <img className={styles.html} src={html} alt="HTML" />
+                    <img className={styles.css} src={css} alt="CSS" />
 
                 </div>
   

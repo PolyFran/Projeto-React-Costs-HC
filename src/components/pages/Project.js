@@ -67,12 +67,14 @@ function Project() {
     }
 
     function createService(project) {
+
         setMessage('')
         // last service
         const lastService = project.services[project.services.length - 1]    
         lastService.id = uuidv4()    
         const lastServiceCost = lastService.cost    
         const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+        const available = 0
     
         // maximum value validation
         if (newCost > parseFloat(project.budget)) {
@@ -81,9 +83,21 @@ function Project() {
           project.services.pop()
           return false
         }
-    
+
+        //verifica se o campo de texto está vazio ou com valor negativo
+        if (parseFloat(lastServiceCost) <= 0.0 || typeof lastServiceCost === "undefined") {
+            setMessage('')
+            setMessage('Campo vazio ou com valor inválido!')
+            setType('error')
+            project.services.pop()
+            return false
+
+        }
         // add service cost to project cost total
         project.cost = newCost
+        //add service cost resulted
+        project.available = (parseFloat(project.budget) - parseFloat(project.cost));
+        
     
         fetch(`http://localhost:5000/projects/${project.id}`, {
           method: 'PATCH',
@@ -102,6 +116,7 @@ function Project() {
           })
           .catch((err) => console.log(err))
       }
+    //}
 
       function removeService(id, cost) {
         const servicesUpdated = project.services.filter(
@@ -153,6 +168,7 @@ function Project() {
                                 <p><span>Categoria: </span> {project.category.name} </p>
                                 <p><span>Total de Orçamento: </span> R$ {project.budget} </p>
                                 <p><span>Total Utilizado: </span> R$ {project.cost} </p>
+                                <p><span>Total Disponível: </span> R$ {project.available} </p>
                             </div>
                         ) : (
                             <div className={styles.project_info}>

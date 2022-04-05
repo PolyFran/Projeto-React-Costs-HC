@@ -1,0 +1,17 @@
+.contact_container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4em;
+}
+
+.contact_container h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+
+}
+.contact_container h2 {
+    width: 100%;
+    padding: .5em;
+}

@@ -1,46 +1,54 @@
 {
   "projects": [
     {
-      "name": "Guilherme",
-      "budget": "1000",
+      "name": "Energia Solar",
+      "budget": "50000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1000,
+      "cost": 5000,
       "services": [
         {
           "name": "Energia Solar",
-          "cost": "1000",
-          "id": "34d20d18-3410-4c51-8490-9bfa839eaf0c",
-          "description": "Energia Solar"
+          "cost": "2000",
+          "description": "paines solares",
+          "id": "09816116-9fc7-4300-a85a-6886c162f815"
+        },
+        {
+          "name": "carro",
+          "cost": "3000",
+          "description": "Compra da Van",
+          "id": "b73e73c7-8da7-4aac-894f-bc6c86c9820d"
         }
       ],
+      "available": 45000,
       "id": 1
     },
     {
-      "name": "MotorHome",
-      "budget": "190000",
+      "name": "Placa Solar",
+      "budget": "10000",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 150000,
+      "cost": 1500,
       "services": [
         {
-          "name": "Van",
-          "cost": "80000",
-          "description": "Compra da Van",
-          "id": "7bcf1370-6ef9-44aa-a7a3-252d809eca1b"
+          "name": "Energia Solar",
+          "cost": "1000",
+          "description": "Compras gerais",
+          "id": "f59e6962-175b-4a7e-b2e1-6b51bdfe8ef0"
         },
         {
-          "name": "Interior",
-          "cost": "70000",
-          "description": "Modificação do Interior",
-          "id": "f58aa8e6-6a57-4e9c-83d7-630e2834713d"
+          "name": "Parafusos",
+          "cost": "500",
+          "description": "Compra de parafusos",
+          "id": "64c953e2-78b4-4e79-bae4-650d77ed9a27"
         }
       ],
-      "id": 4
+      "available": 8500,
+      "id": 2
     }
   ],
   "categories": [

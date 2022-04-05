@@ -4,16 +4,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4em;
+   padding: 3em;
 }
 
 .company_container h1 {
     font-size: 3em;
-    margin-bottom: .5em;
-}
-.company_container h2 {
-    width: 100%;
-    padding: .5em;
+    margin-bottom: 1em;
 }
 
 .company_container h1 span {
@@ -23,14 +19,28 @@
 }
 
 .company_container p {
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
     color: #7b7b7b;
     font-size: 1.2em;
     text-align: justify;
 }
 
-.company_container img {
-    width: 200px;
+.company_container img {    
     margin: 2em 0;
-    margin-right: 1em;
+    margin-right: 2em;
+}
+.css   {
+    width: 108px;
+}
+
+.js   {
+    width: 140px;
+}
+
+.html  {
+    width: 150px;
+}
+
+.react   {
+    width: 150px;
 }
